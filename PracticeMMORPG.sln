@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeMMORPG.CSharp.Plugins", "PracticeMMORPG.CSharp.Plugins.csproj", "{FD273C11-6FD7-9094-83AE-C1FFCFBEFE53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeMMORPG.CSharp", "PracticeMMORPG.CSharp.csproj", "{9B9ED4DE-A79A-1D35-9236-474A9CEB8134}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD273C11-6FD7-9094-83AE-C1FFCFBEFE53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD273C11-6FD7-9094-83AE-C1FFCFBEFE53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD273C11-6FD7-9094-83AE-C1FFCFBEFE53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD273C11-6FD7-9094-83AE-C1FFCFBEFE53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B9ED4DE-A79A-1D35-9236-474A9CEB8134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B9ED4DE-A79A-1D35-9236-474A9CEB8134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B9ED4DE-A79A-1D35-9236-474A9CEB8134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B9ED4DE-A79A-1D35-9236-474A9CEB8134}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
