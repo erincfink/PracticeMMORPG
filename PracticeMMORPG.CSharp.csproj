@@ -61,6 +61,15 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="TrueSync">
+      <HintPath>Assets\Plugins\TrueSync.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>Assets\Plugins\WebSocket\websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3Unity3D">
+      <HintPath>Assets\Plugins\Photon3Unity3D.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="PracticeMMORPG.CSharp.Plugins.csproj">
@@ -69,11 +78,130 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Demo\Boxes\GameSyncManager.cs" />
+    <Compile Include="Assets\Demo\Boxes\SimpleControl.cs" />
+    <Compile Include="Assets\Demo\Lock.io\LockPlayer.cs" />
+    <Compile Include="Assets\Demo\Lock.io\TopDownCamera.cs" />
+    <Compile Include="Assets\Demo\MatchJoiner.cs" />
+    <Compile Include="Assets\Demo\Menu.cs" />
+    <Compile Include="Assets\Demo\Pong\Scripts\BallController.cs" />
+    <Compile Include="Assets\Demo\Pong\Scripts\PaddleController.cs" />
+    <Compile Include="Assets\Demo\Pong\Scripts\PongSyncManager.cs" />
+    <Compile Include="Assets\Demo\ReplayPicker.cs" />
+    <Compile Include="Assets\Demo\ReplayUtils.cs" />
+    <Compile Include="Assets\Demo\SceneLoader.cs" />
+    <Compile Include="Assets\Demo\SimulationPanelScript.cs" />
+    <Compile Include="Assets\Demo\kickingheads\scripts\BallBehavior.cs" />
+    <Compile Include="Assets\Demo\kickingheads\scripts\GameEndHandler.cs" />
+    <Compile Include="Assets\Demo\kickingheads\scripts\GoalBehavior.cs" />
+    <Compile Include="Assets\Demo\kickingheads\scripts\PlayerBehavior.cs" />
     <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\CustomTypes.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Enums.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Extensions.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\FriendInfo.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\GizmoType.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\LoadbalancingPeer.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonClasses.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonLagSimulationGui.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonNetwork.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonPlayer.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonStatsGui.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonStreamQueue.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonView.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PingCloudRegions.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\RPC.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Room.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\RoomInfo.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\RpcIndexComponent.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\ServerSettings.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\SocketUdp.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\SocketWebTcp.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Views\PhotonAnimatorView.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Views\PhotonRigidbody2DView.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Views\PhotonRigidbodyView.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Views\PhotonTransformView.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Views\PhotonTransformViewPositionControl.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Views\PhotonTransformViewPositionModel.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Views\PhotonTransformViewRotationControl.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Views\PhotonTransformViewRotationModel.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Views\PhotonTransformViewScaleControl.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Views\PhotonTransformViewScaleModel.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\ConnectAndJoinRandom.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\CullArea.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\HighlightOwnedGameObj.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\InRoomChat.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\InRoomRoundTimer.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\InRoomTime.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\InputToEvent.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\ManualPhotonViewAllocator.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\MoveByKeys.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\NetworkCullingHandler.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\OnAwakeUsePhotonView.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\OnClickDestroy.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\OnClickInstantiate.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\OnClickLoadSomething.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\OnJoinedInstantiate.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\OnStartDelete.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\PhotonPlayer\PlayerRoomIndexing.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\PickupItem.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\PickupItemSimple.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\PickupItemSyncer.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\PointedAtGameObjectInfo.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\PunPlayerScores.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\PunTeams.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\PunTurnManager.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\QuitOnEscapeOrBack.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\ServerTime.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\ShowInfoOfPlayer.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\ShowStatusWhenConnecting.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\SmoothSyncMovement.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\SupportLogger.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TimeKeeper.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\UI\ButtonInsideScrollList.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\UI\TextButtonTransition.cs" />
+    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\UI\TextToggleIsOnTransition.cs" />
     <Compile Include="Assets\Scripts\Player\CameraController.cs" />
     <Compile Include="Assets\Scripts\Player\CharController.cs" />
+    <Compile Include="Assets\TrueSync\Unity\LayerCollisionMatrix.cs" />
+    <Compile Include="Assets\TrueSync\Unity\PhotonTrueSyncCommunicator.cs" />
+    <Compile Include="Assets\TrueSync\Unity\Physics2DWorldManager.cs" />
+    <Compile Include="Assets\TrueSync\Unity\PhysicsManagerFactory.cs" />
+    <Compile Include="Assets\TrueSync\Unity\PhysicsWorldManager.cs" />
+    <Compile Include="Assets\TrueSync\Unity\TSBoxCollider.cs" />
+    <Compile Include="Assets\TrueSync\Unity\TSBoxCollider2D.cs" />
+    <Compile Include="Assets\TrueSync\Unity\TSCapsuleCollider.cs" />
+    <Compile Include="Assets\TrueSync\Unity\TSCircleCollider2D.cs" />
+    <Compile Include="Assets\TrueSync\Unity\TSCollider.cs" />
+    <Compile Include="Assets\TrueSync\Unity\TSCollider2D.cs" />
+    <Compile Include="Assets\TrueSync\Unity\TSCollision.cs" />
+    <Compile Include="Assets\TrueSync\Unity\TSCollision2D.cs" />
+    <Compile Include="Assets\TrueSync\Unity\TSMaterial.cs" />
+    <Compile Include="Assets\TrueSync\Unity\TSMeshCollider.cs" />
+    <Compile Include="Assets\TrueSync\Unity\TSPhysics2D.cs" />
+    <Compile Include="Assets\TrueSync\Unity\TSPolygonCollider2D.cs" />
+    <Compile Include="Assets\TrueSync\Unity\TSRay.cs" />
+    <Compile Include="Assets\TrueSync\Unity\TSRaycastHit.cs" />
+    <Compile Include="Assets\TrueSync\Unity\TSRaycastHit2D.cs" />
+    <Compile Include="Assets\TrueSync\Unity\TSRigidBody.cs" />
+    <Compile Include="Assets\TrueSync\Unity\TSRigidBody2D.cs" />
+    <Compile Include="Assets\TrueSync\Unity\TSSphereCollider.cs" />
+    <Compile Include="Assets\TrueSync\Unity\TSTerrainCollider.cs" />
+    <Compile Include="Assets\TrueSync\Unity\TSTransform.cs" />
+    <Compile Include="Assets\TrueSync\Unity\TSTransform2D.cs" />
+    <Compile Include="Assets\TrueSync\Unity\TrueSyncBehaviour.cs" />
+    <Compile Include="Assets\TrueSync\Unity\TrueSyncConfig.cs" />
+    <Compile Include="Assets\TrueSync\Unity\TrueSyncManager.cs" />
+    <Compile Include="Assets\TrueSync\Unity\UnityUtils.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Photon Unity Networking\changelog.txt" />
+    <None Include="Assets\Photon Unity Networking\link.xml" />
+    <None Include="Assets\Photon Unity Networking\readme.txt" />
+    <None Include="Assets\Plugins\Photon3Unity3D.xml" />
+    <None Include="Assets\Plugins\release_history.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
     <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
@@ -84,6 +212,8 @@
     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
+    <None Include="Assets\TrueSync\link.xml" />
+    <None Include="Assets\changelog.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
